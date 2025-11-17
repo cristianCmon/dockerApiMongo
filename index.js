@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended: true}));
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const mongo = require("mongodb"); // necesario para generar correctamente ObjectId
-const uriLocal = "mongodb://localhost:27017/";
+const uriLocal = "mongodb://127.0.0.1:27017";
 const uri = uriLocal;
 //const uri = 'mongodb+srv://root:root@cluster0.m6rrr28.mongodb.net/';
 
