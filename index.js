@@ -82,7 +82,8 @@ app.delete('/grupos/:id', async (req, res) => {
   realizarConsultaBD(req, res, "BORRAR", "grupos");
 });
 
-
+// VIDEOTUTO
+// https://www.youtube.com/watch?v=D332DCt4Y5Y&t=961s
 
 //CONSULTAS
 async function realizarConsultaBD(req, res, tipoConsulta, coleccionBD) {
