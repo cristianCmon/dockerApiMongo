@@ -134,7 +134,6 @@ async function realizarConsultaBD(req, res, tipoConsulta, coleccionBD) {
         res.status(200).json({ message: "Registro BORRADO CORRECTAMENTE" });
 
         break;
-        
     }
 
   } catch (err) {

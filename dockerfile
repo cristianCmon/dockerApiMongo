@@ -1,11 +1,14 @@
 FROM node:22-alpine
 
-WORKDIR ./trabajo/
+WORKDIR .
 
-COPY ./contenedor/ .
+COPY . .
 
 RUN npm install
 
-EXPOSE 3001
+EXPOSE 3000
 
-CMD ["node", "start"]
+CMD ["node", "index.js"]
+
+# docker build . -t api-express-docker
+# docker run api-express-docker
