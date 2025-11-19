@@ -18,4 +18,4 @@ CMD ["node", "./index.js"]
 # docker run -p 4000:3000 api-express-docker
 # docker build -t cristiancmon/ejemplo-api:v1.0.0 ./
 
-# docker run -p 3000:3000 -e PORT=3000 -e USER=cristian -e MONGO_URI =mongo ejemplo-api 
+# docker run -p 3000:3000 -e PORT=3000 -e USER=cristian -e MONGO_URI=mongo ejemplo-api 
