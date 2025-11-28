@@ -1,6 +1,9 @@
+// módulo necesario para accerder a variables de entorno
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
-const puerto = 3000
+const puerto = process.env.PORT || 3000;
 
 app.use(express.json()); // permite aceptar jsones en body
 app.use(express.urlencoded({extended: true}));
@@ -8,7 +11,7 @@ app.use(express.urlencoded({extended: true}));
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const mongo = require("mongodb"); // necesario para generar correctamente ObjectId
 
-const uriLocal = "mongodb://127.0.0.1:27017";
+const uriLocal = process.env.MONGO_URI || "mongodb://127.0.0.1:27017";
 const uri = uriLocal;
 //const uri = 'mongodb+srv://root:root@cluster0.m6rrr28.mongodb.net/';
 
